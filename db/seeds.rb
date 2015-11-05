@@ -5,3 +5,5 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Campaign.delete_all
+Campaign.create(name: 'TestCampaign', description: 'This is a test campaign.', start_state_id: 1)

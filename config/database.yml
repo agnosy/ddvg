@@ -21,6 +21,11 @@ default: &default
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
 
+  username: ddvg
+  password: ddvg
+  host: localhost
+  port: 5432
+
 development:
   <<: *default
   database: ddvg_development
