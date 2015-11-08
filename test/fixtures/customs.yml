@@ -1,0 +1,13 @@
+custom1:
+  id: 1
+  state_id: 13
+  url: /gas_buddy/prices/update
+  next_id: 13
+
+custom2:
+  id: 2
+  state_id: 17
+  url: /gas_buddy/prices/update
+  next_id: 16
+
+

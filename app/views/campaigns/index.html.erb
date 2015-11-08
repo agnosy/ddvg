@@ -1,31 +1,19 @@
-<p id="notice"><%= notice %></p>
+<?xml version="1.0"?>
+<vxml version="2.1">
+  <% @states.each do |state| %>
+  <form id="state<%= state.id %>">
+    <%= state.to_vxml.html_safe %>
+    <block>
+      <%
+        transitions = Transition.where(from_state: state)
+        transitions.each do |transition|
+      %>
+      <if cond="<%= transition.condition %>">
+        <goto next="#state<%= transition.to_state_id %>"/>
+      </if>
+      <% end %>
+    </block>
+  </form>
+  <% end %>
+</vxml>
 
-<h1>Listing Campaigns</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Start state</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @campaigns.each do |campaign| %>
-      <tr>
-        <td><%= campaign.name %></td>
-        <td><%= campaign.description %></td>
-        <td><%= campaign.start_state_id %></td>
-        <td><%= link_to 'Show', campaign %></td>
-        <td><%= link_to 'Edit', edit_campaign_path(campaign) %></td>
-        <td><%= link_to 'Destroy', campaign, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Campaign', new_campaign_path %>

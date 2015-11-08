@@ -26,3 +26,50 @@ Things you may want to cover:
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+
+
+### Frequently Asked Questions (FAQ)
+
+How to rollback all the migrations?
+rake db:migrate VERSION=0
+
+How to view the migration status?
+rake db:migrate:status
+
+How to rollback the last 100 migrations?
+rake db:rollback STEP=100
+
+What does the following commands do?
+db:reset
+db:migrate:reset # runs db:drop db:create db:migrate
+db:schema:load
+
+How to list all the rake tasks?
+rake -T [db]
+rake -P
+rake -D [db]
+
+How to display all the rake options?
+rake -h
+
+
+What are all the different  rake db commands?
+rake db:create[:all]: If :all not specified then create the database defined in config/database.yml for the current RAILS_ENV. If :all is specified then create all of the databases defined in config/database.yml.
+rake db:fixtures:load: Load fixtures into the current environment's database. Load specific fixtures using FIXTURES=x,y
+rake db:migrate [VERSION=n]: Migrate the database through scripts in db/migrate. Target specific version with VERSION=n
+rake db:migrate:redo [STEP=n]: (2.0.2) Revert the database by rolling back "STEP" number of VERSIONS and re-applying migrations.
+rake db:migrate:reset: (2.0.2) Drop the database, create it and then re-apply all migrations. The considerations outlined in the note to rake db:create apply.
+rake db:reset: Drop and re-create database using db/schema.rb. The considerations outlined in the note to rake db:create apply.
+rake db:rollback [STEP=N]: (2.0.2) Revert migration 1 or n STEPs back.
+rake db:schema:dump: Create a db/schema.rb file that can be portably used against any DB supported by AR
+rake db:schema:load: Load a schema.rb file into the database
+rake db:sessions:clear: Clear the sessions table
+rake db:sessions:create: Creates a sessions table for use with CGI::Session::ActiveRecordStore
+rake db:structure:dump: Dump the database structure to a SQL file
+rake db:test:clone: Recreate the test database from the current environment's database schema
+rake db:test:clone_structure: Recreate the test databases from the development structure
+rake db:test:prepare: Prepare the test database and load the schema
+rake db:test:purge: Empty the test database
+
+
+

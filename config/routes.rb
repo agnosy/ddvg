@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  resources :campaigns
+  get 'campaigns/index'
+
   get 'welcome/index'
   get 'campaign/index'
 

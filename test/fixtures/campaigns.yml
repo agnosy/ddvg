@@ -1,11 +1,15 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+campaign1:
+  id: 1
+  name: Hello
+  description: This is a hello campaign.
 
-one:
-  name: MyString
-  description: MyText
-  start_state_id: 1
+campaign2:
+  id: 2
+  name: GasPriceWatch
+  description: This is a campaign for gas price watch.
 
-two:
-  name: MyString
-  description: MyText
-  start_state_id: 1
+campaign3:
+  id: 3
+  name: Phonebook
+  description: This is a phonebook campaign for directory assistance.
+

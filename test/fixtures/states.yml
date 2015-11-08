@@ -1,0 +1,119 @@
+state1:
+  id: 1
+  name: state1
+  description: State 1 description
+  type: say
+  campaign_id: 1
+
+state2:
+  id: 2
+  name: state2
+  description: State 2 description
+  type: listen
+  campaign_id: 1
+
+state3:
+  id: 3
+  name: state3
+  description: State 3 description
+  type: say
+  campaign_id: 1
+
+state4:
+  id: 4
+  name: state4
+  description: State 4 description
+  type: say
+  campaign_id: 1
+
+state5:
+  id: 5
+  name: state5
+  description: State 5 description
+  type: say
+  campaign_id: 1
+
+state6:
+  id: 6
+  name: state6
+  description: State 6 description
+  type: say
+  campaign_id: 1
+
+state7:
+  id: 7
+  name: state7
+  description: welcome
+  type: say
+  campaign_id: 2
+
+state8:
+  id: 8
+  name: state8
+  description: goodbye
+  type: say
+  campaign_id: 2
+
+state9:
+  id: 9
+  name: state9
+  description: what do you want to do
+  type: listen
+  campaign_id: 2
+
+state10:
+  id: 10
+  name: state10
+  description: functionality unavailable
+  type: say
+  campaign_id: 2
+
+state11:
+  id: 11
+  name: state11
+  description: get station id
+  type: listen
+  campaign_id: 2
+
+state12:
+  id: 12
+  name: state12
+  description: want to start over
+  type: listen
+  campaign_id: 2
+
+state13:
+  id: 13
+  name: state13
+  description: update price
+  type: custom
+  campaign_id: 2
+
+state14:
+  id: 14
+  name: state14
+  description: want to set another price
+  type: listen
+  campaign_id: 2
+
+state15:
+  id: 15
+  name: state15
+  description: welcome
+  type: say
+  campaign_id: 3
+
+state16:
+  id: 16
+  name: state16
+  description: goodbye
+  type: say
+  campaign_id: 3
+
+state17:
+  id: 17
+  name: state17
+  description: custom state
+  type: custom
+  campaign_id: 3
+

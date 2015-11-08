@@ -1,0 +1,18 @@
+grammar1:
+  id: 1
+  src: grammar1.gsl
+  text: test grammar
+  description: Grammar description goes here
+
+grammar2:
+  id: 2
+  src: grammar2.gsl
+  text: test grammar
+  description: Grammar description goes here
+
+grammar3:
+  id: 3
+  src: grammar3.gsl
+  text: test grammar
+  description: Grammar description goes here
+

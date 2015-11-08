@@ -1,0 +1,157 @@
+audio1:
+  id: 1
+  src: audio1.wav
+  text: Hello world, I am number 1.
+  description: Audio description goes here
+
+audio2:
+  id: 2
+  src: audio2.wav
+  text: Hello world, I am number 2.
+  description: Audio description goes here
+
+audio3:
+  id: 3
+  src: audio3.wav
+  text: Hello world, I am number 3.
+  description: Audio description goes here
+
+audio4:
+  id: 4
+  src: audio4.wav
+  text: You selected get
+  description: Audio description goes here
+
+audio5:
+  id: 5
+  src: audio5.wav
+  text: You selected put
+  description: Audio description goes here
+
+audio6:
+  id: 6
+  src: audio6.wav
+  text: Welcome to vombix!
+  description: Audio description goes here
+
+audio7:
+  id: 7
+  src: audio7.wav
+  text: Please say get price or update price.
+  description: Audio description goes here
+
+audio8:
+  id: 8
+  src: audio8.wav
+  text: Please say one of get price or update price.
+  description: Audio description goes here
+
+audio9:
+  id: 9
+  src: audio9.wav
+  text: You are in the gas price retriever updater.
+  description: Audio description goes here
+
+audio10:
+  id: 10
+  src: audio10.wav
+  text: I am sorry, I didn't hear you.
+  description: Audio description goes here
+
+audio11:
+  id: 11
+  src: audio11.wav
+  text: I am sorry, I didn't understand.
+  description: Audio description goes here
+
+audio12:
+  id: 12
+  src: audio12.wav
+  text: Please enter the gas station i d.
+  description: Audio description goes here
+
+audio13:
+  id: 13
+  src: audio13.wav
+  text: This functionality is currently not available.
+  description: Audio description goes here
+
+audio14:
+  id: 14
+  src: audio14.wav
+  text: Do you want to start over?
+  description: Audio description goes here
+
+audio15:
+  id: 15
+  src: audio15.wav
+  text: Thank you for calling vombix.  Goodbye!
+  description: Audio description goes here
+
+audio16:
+  id: 16
+  src: audio16.wav
+  text: Please enter the price of regular.
+  description: Audio description goes here
+
+audio17:
+  id: 17
+  src: audio17.wav
+  text: Please enter the price of midgrade.
+  description: Audio description goes here
+
+audio18:
+  id: 18
+  src: audio18.wav
+  text: Please enter the price of premium.
+  description: Audio description goes here
+
+audio19:
+  id: 19
+  src: audio19.wav
+  text: Please enter the price of
+  description: Audio description goes here
+
+audio20:
+  id: 20
+  src: audio20.wav
+  text: regular
+  description: Audio description goes here
+
+audio21:
+  id: 21
+  src: audio21.wav
+  text: midgrade
+  description: Audio description goes here
+
+audio22:
+  id: 22
+  src: audio22.wav
+  text: premium
+  description: Audio description goes here
+
+audio23:
+  id: 23
+  src: audio23.wav
+  text: The price of
+  description: Audio description goes here
+
+audio24:
+  id: 24
+  src: audio24.wav
+  text: at this location is set to
+  description: Audio description goes here
+
+audio25:
+  id: 25
+  src: audio25.wav
+  text: Please enter the gas station i d provided by gas price watch.
+  description: Audio description goes here
+
+audio26:
+  id: 26
+  src: audio26.wav
+  text: Do you want to update price for another grade?
+  description: Audio description goes here
+
+

@@ -1,0 +1,51 @@
+listen1:
+  id: 1
+  state_id: 2
+  prompt_id: 1
+  help_id: 1
+  noinput_id: 1
+  nomatch_id: 1
+  inputtype: testinputtype
+  grammar_id: 1
+
+listen2:
+  id: 2
+  state_id: 9
+  prompt_id: 7
+  help_id: 9
+  noinput_id: 10
+  nomatch_id: 11
+  inputtype: testinputtype
+  grammar_id:
+
+listen3:
+  id: 3
+  state_id: 11
+  prompt_id: 12
+  help_id: 25
+  noinput_id: 10
+  nomatch_id: 11
+  inputtype: digits
+  grammar_id:
+
+listen4:
+  id: 4
+  state_id: 12
+  prompt_id: 14
+  help_id: 14
+  noinput_id: 10
+  nomatch_id: 11
+  inputtype: boolean
+  grammar_id:
+
+listen5:
+  id: 5
+  state_id: 14
+  prompt_id: 26
+  help_id: 26
+  noinput_id: 10
+  nomatch_id: 11
+  inputtype: boolean
+  grammar_id:
+
+
