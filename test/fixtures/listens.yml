@@ -5,7 +5,7 @@ listen1:
   help_id: 1
   noinput_id: 1
   nomatch_id: 1
-  inputtype:
+  inputtype: boolean
   grammar_id: 1
 
 listen2:
@@ -15,8 +15,8 @@ listen2:
   help_id: 9
   noinput_id: 10
   nomatch_id: 11
-  inputtype:
-  grammar_id:
+  inputtype: boolean
+  grammar_id: 2
 
 listen3:
   id: 3
@@ -26,7 +26,7 @@ listen3:
   noinput_id: 10
   nomatch_id: 11
   inputtype: digits
-  grammar_id:
+  grammar_id: 2
 
 listen4:
   id: 4
@@ -36,7 +36,7 @@ listen4:
   noinput_id: 10
   nomatch_id: 11
   inputtype: boolean
-  grammar_id:
+  grammar_id: 2
 
 listen5:
   id: 5
@@ -46,6 +46,6 @@ listen5:
   noinput_id: 10
   nomatch_id: 11
   inputtype: boolean
-  grammar_id:
+  grammar_id: 2
 
 

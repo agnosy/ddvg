@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'campaigns/:id' => 'campaigns#index'
   get 'campaigns/index'
 
   get 'welcome/index'

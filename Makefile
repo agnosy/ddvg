@@ -38,4 +38,8 @@ load-testdata:
 #clean: destroy-models recreate-db
 
 
+reload-testdata:
+	herolu run rake db:reset DATABASE_URL
+	herolu run rake db:migrate
+	heroku run rake db:fixtures:load FIXTURES=campaigns,states,transitions,audios,grammars,says,listens,customs
 
