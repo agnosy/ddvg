@@ -43,7 +43,7 @@ reload-testdata:
 	rake db:fixtures:load FIXTURES=campaigns,states,transitions,audios,grammars,says,listens,customs
 
 heroku-reload-testdata:
-	herolu run rake db:reset DATABASE_URL
-	herolu run rake db:migrate
+	heroku pg:reset DATABASE_URL
+	heroku run rake db:migrate
 	heroku run rake db:fixtures:load FIXTURES=campaigns,states,transitions,audios,grammars,says,listens,customs
 

@@ -15,8 +15,8 @@ listen2:
   help_id: 9
   noinput_id: 10
   nomatch_id: 11
-  inputtype: boolean
-  grammar_id: 2
+  inputtype:
+  grammar_id: 1
 
 listen3:
   id: 3
