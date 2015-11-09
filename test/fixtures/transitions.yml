@@ -1,18 +1,113 @@
 trans1:
   id: 1
-  name: transition1
-  description: This is transition 1 from fixtures.
+  name: tran1
+  description: tran1description
   from_state_id: 1
   to_state_id: 2
   condition: "true"
 
 trans2:
   id: 2
-  name: transition2
-  description: This is transition 2 from fixtures.
+  name: tran2
+  description: tran2description
   from_state_id: 2
-  to_state_id: 3
+  to_state_id: 6
+  condition: "state2field1=='put'"
+
+trans3:
+  id: 3
+  name: tran3
+  description: tran3description
+  from_state_id: 3
+  to_state_id: 4
   condition: "true"
 
+trans4:
+  id: 4
+  name: tran4
+  description: tran4description
+  from_state_id: 2
+  to_state_id: 5
+  condition: "state2field1=='get'"
+
+trans5:
+  id: 5
+  name: tran5
+  description: welcome to get request type
+  from_state_id: 7
+  to_state_id: 9
+  condition: "true"
+
+trans6:
+  id: 6
+  name: tran6
+  description: get request type to put
+  from_state_id: 9
+  to_state_id: 11
+  condition: "state9field1=='put'"
+
+trans7:
+  id: 7
+  name: tran7
+  description: get request type to get
+  from_state_id: 9
+  to_state_id: 10
+  condition: "state9field1=='get'"
+
+trans8:
+  id: 8
+  name: tran8
+  description: put to update price
+  from_state_id: 11
+  to_state_id: 13
+  condition: "true"
+
+trans9:
+  id: 9
+  name: tran9
+  description: get to want to start over
+  from_state_id: 10
+  to_state_id: 12
+  condition: "true"
+
+trans10:
+  id: 10
+  name: tran10
+  description: start over to yes
+  from_state_id: 12
+  to_state_id: 7
+  condition: "state12field1==true"
+
+trans11:
+  id: 11
+  name: tran11
+  description: start over to no
+  from_state_id: 12
+  to_state_id: 8
+  condition: "state12field1==false"
+
+trans12:
+  id: 12
+  name: tran12
+  description: update price another grade to yes
+  from_state_id: 14
+  to_state_id: 13
+  condition: "state14field1==true"
+
+trans13:
+  id: 13
+  name: tran13
+  description: update price another grade to no
+  from_state_id: 14
+  to_state_id: 12
+  condition: "state14field1==false"
+
+trans14:
+  id: 14
+  name: tran14
+  description: welcome => custom test
+  from_state_id: 15
+  to_state_id: 17
+  condition: "true"
 
 

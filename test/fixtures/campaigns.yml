@@ -11,5 +11,5 @@ campaign2:
 campaign3:
   id: 3
   name: Phonebook
-  description: This is a phonebook campaign for directory assistance.
+  description: This is a campaign for directory assistance.
 
