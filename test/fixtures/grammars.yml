@@ -1,18 +1,18 @@
 grammar1:
   id: 1
-  src: grammar1.gsl
+  src: /grammars/grammar1.grxml
   text: test grammar
-  description: Grammar description goes here
+  description: Grammar for accepting put or get
 
 grammar2:
   id: 2
-  src: grammar2.gsl
+  src: /grammars/grammar2.grxml
   text: test grammar
   description: Grammar description goes here
 
 grammar3:
   id: 3
-  src: grammar3.gsl
+  src: /grammars/grammar3.grxml
   text: test grammar
   description: Grammar description goes here
 

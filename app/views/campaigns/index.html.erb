@@ -8,7 +8,7 @@
         transitions = Transition.where(from_state: state)
         transitions.each do |transition|
       %>
-      <if cond="<%= transition.condition %>">
+      <if cond="<%= transition.condition.html_safe %>">
         <goto next="#state<%= transition.to_state_id %>"/>
       </if>
       <% end %>

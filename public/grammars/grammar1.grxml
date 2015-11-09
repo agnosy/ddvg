@@ -1,0 +1,10 @@
+<?xml version= "1.0"?>
+<grammar xml:lang="en-US" root="rule1">
+  <rule id="rule1">
+    <one-of>
+      <item>put</item>
+      <item>get</item>
+    </one-of>
+  </rule>
+</grammar>
+

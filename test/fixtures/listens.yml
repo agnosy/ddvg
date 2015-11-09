@@ -5,7 +5,7 @@ listen1:
   help_id: 1
   noinput_id: 1
   nomatch_id: 1
-  inputtype: boolean
+  inputtype:
   grammar_id: 1
 
 listen2:

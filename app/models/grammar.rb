@@ -1,7 +1,9 @@
 class Grammar < ActiveRecord::Base
   def to_vxml
+     # TODO: Move type to grammar table.
+     #<grammar type="application/x-gsl" src="#{self.src}"/>
     return <<-EOS
-     <grammar type="application/x-gsl" src="/static/vxml/grammars/#{self.src}"/>
+     <grammar type="application/grammar-xml" src="#{self.src}"/>
     EOS
   end
 end
