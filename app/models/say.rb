@@ -6,7 +6,7 @@ class Say < ActiveRecord::Base
     return <<-EOS
     <block>
       <prompt>
-        #{Audio.find(self.audio).to_vxml}
+        #{Audio.find(self.audio.id).to_vxml}
       </prompt>
     </block>
     EOS
