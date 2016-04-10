@@ -47,3 +47,6 @@ heroku-reload-testdata:
 	heroku run rake db:migrate
 	heroku run rake db:fixtures:load FIXTURES=campaigns,states,transitions,audios,grammars,says,listens,customs
 
+cache-creds:
+	git config credential.helper 'cache --timeout=31536000'
+
