@@ -58,13 +58,13 @@ INSERT INTO states(
 INSERT INTO audios(
     id, src, text, description, created_at, updated_at
 ) VALUES (
-    11001, 'audio11001.wav', 'You are at audio 11001 state', NULL, now(), now()
+    11001, NULL, 'You are at audio 11001 state', NULL, now(), now()
 );
 
 INSERT INTO audios(
     id, src, text, description, created_at, updated_at
 ) VALUES (
-    11002, 'audio11002.wav', 'You are at audio 11002 state', NULL, now(), now()
+    11002, NULL, 'You are at audio 11002 state', NULL, now(), now()
 );
 
 INSERT INTO audios(
@@ -76,19 +76,19 @@ INSERT INTO audios(
 INSERT INTO audios(
     id, src, text, description, created_at, updated_at
 ) VALUES (
-    11004, 'audio11004.wav', 'You are at audio 11004 state', NULL, now(), now()
+    11004, NULL, 'You are at audio 11004 state', NULL, now(), now()
 );
 
 INSERT INTO audios(
     id, src, text, description, created_at, updated_at
 ) VALUES (
-    11005, 'audio11005.wav', 'You are at audio 11005 state', NULL, now(), now()
+    11005, NULL, 'You are at audio 11005 state', NULL, now(), now()
 );
 
 INSERT INTO audios(
     id, src, text, description, created_at, updated_at
 ) VALUES (
-    11006, 'audio11006.wav', 'You are at audio 11006 state', NULL, now(), now()
+    11006, NULL, 'You are at audio 11006 state', NULL, now(), now()
 );
 
 
