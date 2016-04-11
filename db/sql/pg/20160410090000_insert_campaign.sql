@@ -47,7 +47,21 @@ INSERT INTO states(
 INSERT INTO states(
     id, name, description, type, campaign_id, created_at, updated_at
 ) VALUES (
-    11006, 'Test state 11006', NULL, 'say', 11, now(), now()
+    11006
+  , 'Thank you for going through Kalajitha Interactive Voice Response demonstration!'
+  , NULL, 'say', 11, now(), now()
+);
+
+INSERT INTO states(
+    id, name, description, type, campaign_id, created_at, updated_at
+) VALUES (
+    11101, 'Listen state 11101', NULL, 'listen', 11, now(), now()
+);
+
+INSERT INTO states(
+    id, name, description, type, campaign_id, created_at, updated_at
+) VALUES (
+    11102, 'Listen state 11102', NULL, 'listen', 11, now(), now()
 );
 
 
@@ -58,7 +72,7 @@ INSERT INTO states(
 INSERT INTO audios(
     id, src, text, description, created_at, updated_at
 ) VALUES (
-    11001, NULL, 'You are at audio 11001 state', NULL, now(), now()
+    11001, NULL, 'Welcome to Kalajitha services company!', NULL, now(), now()
 );
 
 INSERT INTO audios(
@@ -70,7 +84,7 @@ INSERT INTO audios(
 INSERT INTO audios(
     id, src, text, description, created_at, updated_at
 ) VALUES (
-    11003, 'audio11003.wav', 'You are at audio 11003 state', NULL, now(), now()
+    11003, 'audio11003.wav', 'Do you want to continue?', NULL, now(), now()
 );
 
 INSERT INTO audios(
@@ -93,7 +107,7 @@ INSERT INTO audios(
 
 
 --------------------------------------------------------------------------------
--- Insert individual states.
+-- Insert say states.
 --------------------------------------------------------------------------------
 
 INSERT INTO says(
@@ -134,6 +148,27 @@ INSERT INTO says(
 
 
 --------------------------------------------------------------------------------
+-- Insert listen states.
+--------------------------------------------------------------------------------
+
+INSERT INTO listens(
+    state_id, prompt_id, help_id, noinput_id, nomatch_id
+  , inputtype, created_at, updated_at
+) VALUES (
+    11101, 11003, 11003, 11003, 11003
+  , 'boolean', now(), now()
+);
+
+INSERT INTO listens(
+    state_id, prompt_id, help_id, noinput_id, nomatch_id
+  , inputtype, created_at, updated_at
+) VALUES (
+    11102, 11003, 11003, 11003, 11003
+  , 'boolean', now(), now()
+);
+
+
+--------------------------------------------------------------------------------
 -- Insert transitions.
 --------------------------------------------------------------------------------
 
@@ -145,12 +180,38 @@ INSERT INTO transitions(
   , TRUE, now(), now()
 );
 
+/*
 INSERT INTO transitions(
     name, description, from_state_id, to_state_id
   , condition, created_at, updated_at
 ) VALUES (
     NULL, NULL, 11002, 11003
   , TRUE, now(), now()
+);
+*/
+
+INSERT INTO transitions(
+    name, description, from_state_id, to_state_id
+  , condition, created_at, updated_at
+) VALUES (
+    NULL, NULL, 11002, 11101
+  , TRUE, now(), now()
+);
+
+INSERT INTO transitions(
+    name, description, from_state_id, to_state_id
+  , condition, created_at, updated_at
+) VALUES (
+    NULL, NULL, 11101, 11004
+  , 'state11101field1==true', now(), now()
+);
+
+INSERT INTO transitions(
+    name, description, from_state_id, to_state_id
+  , condition, created_at, updated_at
+) VALUES (
+    NULL, NULL, 11101, 11005
+  , 'state11101field1==false', now(), now()
 );
 
 INSERT INTO transitions(
