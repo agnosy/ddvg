@@ -14,22 +14,22 @@ class Listen < ActiveRecord::Base
       #{grammar_element}
 
       <prompt>
-        #{Audio.find(self.prompt).to_vxml}
+        #{Audio.find(self.prompt.id).to_vxml}
         <break size="medium"/>
       </prompt>
 
       <help>
-        #{Audio.find(self.help).to_vxml}
+        #{Audio.find(self.help.id).to_vxml}
         <reprompt/>
       </help>
 
       <catch event="noinput">
-        #{Audio.find(self.noinput).to_vxml}
+        #{Audio.find(self.noinput.id).to_vxml}
         <reprompt/>
       </catch>
 
       <catch event="nomatch">
-        #{Audio.find(self.nomatch).to_vxml}
+        #{Audio.find(self.nomatch.id).to_vxml}
         <reprompt/>
       </catch>
 
